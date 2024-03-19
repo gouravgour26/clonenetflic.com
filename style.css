@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap') * {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1500px, 100vw);
+    height: 70vh;
+    position: relative;
+    background-color: red;
+
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.62;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+
+}
+
+nav img {
+    color: red;
+    width: 160px;
+    height: 38px;
+    position: relative;
+    z-index: 1;
+
+}
+
+nav button {
+    position: relative;
+    z-index: 1;
+}
+
+.hero {
+    color: white;
+    position: relative;
+    z-index: 1;
+    height: calc(100% - 62px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Martel Sans", sans-serif;
+    gap: 23px;
+    padding: 0 25px;
+
+}
+
+.hero>:nth-child(1) {
+
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+
+}
+
+@media screen and (max-width:1122px) {
+
+    .hero>:nth-child(1) {
+
+        font-weight: 700;
+        font-size: 35px;
+        text-align: center;
+
+    }
+
+}
+
+.hero> :nth-child(2) {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.sepration {
+    position: relative;
+    z-index: 20;
+    height: 7px;
+    background-color: grey;
+    opacity: 0.30;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+@media screen and (max-width:1122px) {
+    
+    .hero-buttons {
+        
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+   
+}
+.btn {
+
+    background-color: rgba(253, 248, 248, 0.037);
+    color: white;
+    font-weight: 500;
+    padding: 5px 10px;
+    border: 1px solid rgba(129, 126, 126, 0.368);
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 30px;
+    font-size: 15px;
+}
+
+.main input {
+    background-color: rgba(23, 23, 23, 0.46);
+    border-color: rgba(244, 237, 237, 0.22);
+    color: white;
+    border-radius: 5px;
+    padding: 6px 45px 14px 6px;
+    font-size: 12px;
+
+
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media screen and (max-width:1122px) {
+
+    .first {
+        flex-wrap: wrap;
+        padding: 30px 0px;
+        gap: 40px;
+    }
+
+    .secimg img {
+        width: 114vw;
+        position: relative;
+        z-index: 10;
+    }
+    .secimg video {
+        position: absolute;
+        top: 30;
+        right: 0;
+        width: 110vw;
+    
+    }
+
+}
+
+.secimg {
+    position: relative;
+}
+
+.secimg img {
+    width: 35vw;
+    position: relative;
+    z-index: 10;
+}
+
+.secimg video {
+    position: absolute;
+    top: 30;
+    right: 0;
+    width: 32vw;
+
+}
+
+@media screen and (max-width:1122px) {
+
+   
+    .secimg img {
+        width: 114vw;
+        position: relative;
+        z-index: 10;
+    }
+    .secimg video {
+        position: absolute;
+        top: 30;
+        right: 0;
+        width: 110vw;
+    
+    }
+
+}
+
+.first>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bold;
+
+}
+
+@media screen and (max-width:1122px) {
+
+    .first>div :nth-child(1) {
+        font-size: 38px;
+        font-weight: bold;
+
+
+
+    }
+}
+
+.first>div :nth-child(2) {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 30px;
+
+}
+
+.faqbox:hover {
+    background: #3e3d3d
+}
+
+.faqbox {
+    display: flex;
+    transition: all 1s ease-out;
+    justify-content: space-between;
+    font-size: 24px;
+    background-color: #2d2d2d;
+    color: white;
+    padding: 16px;
+    margin: 14px auto;
+    width: 60vw;
+    cursor: pointer;
+
+
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 34px;
+}
+
+.question {
+    padding: 34px 0px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+
+@media screen and (max-width:1122px) {
+      nav{
+        max-width: 90vw;
+      }
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        max-width: 60vw;
+        margin: auto;
+        gap: 35px;
+    }
+
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
